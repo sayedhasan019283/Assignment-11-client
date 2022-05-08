@@ -1,0 +1,12 @@
+.extra-container{
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 5px;
+}
+.extrapart-img img{
+    height: 300px;
+    width: 430px;
+    padding: 20px;
+    border-radius: 30px;
+}
+

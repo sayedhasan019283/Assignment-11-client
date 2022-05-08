@@ -1,0 +1,15 @@
+.card-style {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.button-fixing {
+    margin-bottom: 0px;
+    background-color: #e4c1d5;
+    box-shadow: 0px 12px 23px -8px #ff008f;
+    padding: 15px;
+    border-radius: 15px;
+
+}

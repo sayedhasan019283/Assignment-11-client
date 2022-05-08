@@ -1,0 +1,30 @@
+.Navbar-background {
+    background-color: rgb(200, 220, 216);
+}
+
+.nav-border {
+    border-bottom: 2px solid #e5dcdc;
+}
+
+.navbar-style {
+    text-decoration: none;
+}
+
+.logo {
+    width: "50px"
+
+}
+
+.logo img {
+    border-radius: 7px;
+    padding: 2px;
+
+}
+
+.signout-btn-fixing {
+    background-color: #FF008F;
+    box-shadow: 0px 12px 23px -8px #ff008f;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 10px;
+}
