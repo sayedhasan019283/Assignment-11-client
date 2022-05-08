@@ -23,6 +23,7 @@ const AddInventory = () => {
 
             })
     };
+    // /.NG;JQ4NIOND'FMPQOJ
     return (
         <div className='d-flex justify-content-center align-items-center'>
             <div className='text-center'>
