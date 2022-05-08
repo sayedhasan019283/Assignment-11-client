@@ -41,5 +41,5 @@ const AddInventory = () => {
         </div>
     );
 };
-
+//ND;Lvhoweihvoidscjowehiofh
 export default AddInventory;
