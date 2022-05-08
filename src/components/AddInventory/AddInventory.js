@@ -23,6 +23,7 @@ const AddInventory = () => {
 
             })
     };
+    <div className='d-flex justify-content-center align-items-center'></div>
     return (
         <div className='d-flex justify-content-center align-items-center'>
             <div className='text-center'>
