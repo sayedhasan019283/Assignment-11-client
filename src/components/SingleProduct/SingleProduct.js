@@ -10,7 +10,7 @@ const SingleProduct = () => {
     const [product, setProduct] = useState([])
     useEffect(() => {
         const getProduct = async () => {
-            await axios.get(`http://localhost:5000/inventory/${inventoryId}`)
+            await axios.get(`https://frozen-everglades-92507.herokuapp.com/inventory/${inventoryId}`)
                 .then(response => setProduct(response.data))
 
         }
@@ -23,8 +23,8 @@ const SingleProduct = () => {
         newQuantity = productQuantity - 1
         product.quantity = newQuantity
         const newData = { quantity: product.quantity }
-        await axios.put(`http://localhost:5000/inventory/${inventoryId}`, newData)
-        axios.get(`http://localhost:5000/inventory/${inventoryId}`)
+        await axios.put(`https://frozen-everglades-92507.herokuapp.com/inventory/${inventoryId}`, newData)
+        axios.get(`https://frozen-everglades-92507.herokuapp.com/inventory/${inventoryId}`)
             .then(response => {
                 setProduct(response.data)
                 toast('Delivered successfully')
@@ -49,8 +49,8 @@ const SingleProduct = () => {
             return
         }
 
-        await axios.put(`http://localhost:5000/inventory/${inventoryId}`, newReStockQuantity)
-        axios.get(`http://localhost:5000/inventory/${inventoryId}`)
+        await axios.put(`https://frozen-everglades-92507.herokuapp.com/inventory/${inventoryId}`, newReStockQuantity)
+        axios.get(`https://frozen-everglades-92507.herokuapp.com/inventory/${inventoryId}`)
             .then(response => {
                 setProduct(response.data)
                 toast('Item Restock Successfully')

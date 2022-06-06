@@ -39,7 +39,7 @@ const Login = () => {
     let location = useLocation();
     let from = location?.state?.from?.pathname || "/";
     if (user || googleUser) {
-        axios.post('http://localhost:5000/login', { email: user?.user?.email || googleUser?.user?.email })
+        axios.post('https://frozen-everglades-92507.herokuapp.com/login', { email: user?.user?.email || googleUser?.user?.email })
             .then(response => localStorage.setItem('accessToken', response.data))
         navigate(from, { replace: true })
 

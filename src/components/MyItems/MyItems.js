@@ -10,7 +10,7 @@ const MyItems = () => {
     const [user] = useAuthState(auth)
     const [myItems, setMyItems] = useState([])
     useEffect(() => {
-        axios.get(`http://localhost:5000/my-items?email=${user.email}`, {
+        axios.get(`https://frozen-everglades-92507.herokuapp.com/my-items?email=${user.email}`, {
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`
             }
@@ -18,7 +18,7 @@ const MyItems = () => {
             .then(response => setMyItems(response.data))
     }, [myItems])
     const handleDelete = async id => {
-        await axios.delete(`http://localhost:5000/inventory/${id}`)
+        await axios.delete(`https://frozen-everglades-92507.herokuapp.com/inventory/${id}`)
         toast('Item deleted')
 
 
